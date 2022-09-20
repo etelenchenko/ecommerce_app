@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ecommerce_app
+    username: postgres
+    password: postgres
+  liquibase:
+    change-log: "classpath:db/changelog.xml"
+  jpa:
+    hibernate:
+      ddl-auto: none

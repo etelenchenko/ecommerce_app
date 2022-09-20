@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ecommerce_app
+      POSTGRES_PASSWORD: postgres
+    volumes:
+    - db_data:/var/lib/postgres
+
+volumes:
+  db_data:
